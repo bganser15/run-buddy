@@ -4,6 +4,7 @@ these margins are built into the h1-h6 tags in css*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }  
   
   body {
@@ -42,4 +43,50 @@ header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 22px;
+}
+
+/*hero style start */
+.hero {
+  background-image: url("../images/hero-bg.jpeg");
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+/*hero form style start*/
+.hero-form {
+  color: #024e76;
+  background-color: #fce138 ;
+  padding: 20px;
+  width: 500px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #024e76;
+  position: relative;
+}
+footer {
+  background: #fce138;
+  /*removed this from original code in module because it made the footer too long before adding border box property to * */
+  width: 100%;
+  padding: 40px 35px;
+}
+
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76;
+}
+
+section {
+  padding: 60px;
 }
