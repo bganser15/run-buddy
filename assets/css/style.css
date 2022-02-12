@@ -8,8 +8,8 @@ these margins are built into the h1-h6 tags in css*/
 }  
   
 body {
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 section {
@@ -82,6 +82,8 @@ header nav ul li a {
   font-size: 55px;
   color: #fce138;
 }
+
+
 /*hero form style start*/
 .hero-form {
   color: #024e76;
@@ -95,7 +97,6 @@ header nav ul li a {
   
 }
 
-/*had issues with form positioning and had to manually add values to get it to lineup 400 60*/
 
 .hero-form p {
   margin: 5px 0 15px 0;
@@ -135,10 +136,6 @@ header nav ul li a {
   display:flex;
 }
 
-.intro {
-  
-
-}
 
 .section-title {
   font-size: 55px;
@@ -168,7 +165,6 @@ header nav ul li a {
 }
 
 .steps {
-
   background: #fce138;
 }
 
@@ -220,6 +216,7 @@ header nav ul li a {
 .step-img img {
   max-width: 100%;
 }
+
 /*trainers style starts*/
 .trainers {
   width: 100%;
@@ -236,7 +233,7 @@ header nav ul li a {
   color: #fce138;
   flex: 1;
 }
-/*width equals 100% (35 + 65)to ensure content floats, this is percent of the container the content is taking up*/
+
 .trainer img {
   width: 100%;
 
@@ -263,14 +260,6 @@ header nav ul li a {
   
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
 /*reach out style starts*/
 .contact {
   background: #024e76;
@@ -279,18 +268,17 @@ header nav ul li a {
 .contact h2 {
   color: #fce138;
 }
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  display: inline-block;
-  width: 410px;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -302,13 +290,41 @@ header nav ul li a {
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
 }
 
 .contact-info a {
   color: #fce138;
 }
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 
 /*footer style starts*/
 footer {
